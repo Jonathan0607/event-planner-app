@@ -12,6 +12,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@keyframes fade-in-scale {
+  from{
+    opacity: 0;
+    transform : scale(0.80);
+  }
+  to{
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@theme {
+  --animate-fade-in: fade-in-scale 0.4s ease-out;
+  
+}
+
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
