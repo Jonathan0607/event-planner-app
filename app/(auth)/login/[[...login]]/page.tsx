@@ -1,12 +1,16 @@
 import Image from "next/image";
 
+
 function LoginPage() {
     return (
-        <main className ="mt-15">
+        <main className ="flex flex-col items-center p-5 gap-10">
             <Image
-                src = '/assets/logo.svg'
+                src = '/logo.svg'
+                width = {50}
+                height = {50}
                 alt = 'Logo'
             />
+
         </main>
     );
 }
