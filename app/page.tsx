@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 export default async function Home() {
   const user = await currentUser
 
-  if (!user) return (<LandingPage/>);
+  return (<LandingPage/>);
   
   return redirect("/events")
 }
